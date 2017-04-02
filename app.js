@@ -13,21 +13,21 @@
 	
 	
 	if(data.weather[0].description==="fog"){
-	document.getElementById("des").innerHTML=`<img src="fog.png">`;
+	document.getElementById("des").innerHTML=`<img src="images/fog.png">`;
 	} else if(data.weather[0].description==="haze"){
-		document.getElementById("des").innerHTML=`<img src="haze.png">`;	
+		document.getElementById("des").innerHTML=`<img src="images/haze.png">`;	
 	}else if(data.weather[0].description==="light rain"||data.weather[0].description==="shower rain"||data.weather[0].description==="light intensity shower rain"){
 		
-document.getElementById("des").innerHTML=`<img src="rain.png">`;	
+document.getElementById("des").innerHTML=`<img src="images/rain.png">`;	
 		
 }else if(data.weather[0].description==="moderate rain"){
-	document.getElementById("des").innerHTML=`<img src="rain.png">`;	}
+	document.getElementById("des").innerHTML=`<img src="images/rain.png">`;	}
 	
 else if(data.weather[0].description==="overcast clouds"||data.weather[0].description==="broken clouds"){
-document.getElementById("des").innerHTML=`<img src="clouds.png">`;}
+document.getElementById("des").innerHTML=`<img src="images/clouds.png">`;}
 
 else if(data.weather[0].description==="clear sky"){
-document.getElementById("des").innerHTML=`<img src="clearsky.png">`;}else{
+document.getElementById("des").innerHTML=`<img src="images/clearsky.png">`;}else{
 	document.getElementById("des").innerHTML=des;
 	}
 	
